@@ -6,11 +6,11 @@ html
       .row
         .col-xs-4
            = link_to "/"
-            =image_tag "rogo.png", width: "80%", class:"header-image"
+            =image_tag "rogo.png", width: "70%", class:"header-image"
         h1.col-xs-3.white
-            ITプログラミングと分析型マーケティングでテレアポ代行なら『アポ匠』
+         通常メールマーケティングより10倍以上の成果なら『Okurite』
         .col-xs-4.header-right
-            =image_tag "tel.gif", width: "100%", class:"header-image"
+            =image_tag "tel.gif", width: "80%", class:"header-image"
         .col-xs-1
                 .navToggle
                   span
@@ -35,15 +35,15 @@ html
         nav.globalMenuSp
            ul
             li
-             = link_to  'トップ', '/'
+              = link_to  'トップ', '/' , class: "col-md"
             li
-             = link_to  '代理店募集', '/agent'
+              = link_to  '記事一覧', '/posts' , :class=>"col-md"
             li
-             = link_to  '採用募集', '/recruit'
+              = link_to  'よくある質問', '/question' , :class=>"col-md"
             li
-             = link_to  '会社概要', '/company'
+              = link_to  '会社概要', '/company' , :class=>"col-md"
             li
-             = link_to  '問い合わせ', '/contact'
+             = link_to  '問い合わせ', '/contact' , :class=>"col-md"
 
   body
     p.notice
