@@ -5,7 +5,7 @@ class OutsourcingMailer < ActionMailer::Base
   def received_email(outsourcing)
     @outsourcing = outsourcing
     mail to: "info@ri-plus.jp"
-    mail(subject: '株式会社Ri-Plusの業務委託事務の応募がありました') do |format|
+    mail(subject: 'Okuriteの業務委託事務の応募がありました') do |format|
       format.text
     end
   end
@@ -13,7 +13,7 @@ class OutsourcingMailer < ActionMailer::Base
   def send_email(outsourcing)
     @outsourcing = outsourcing
     mail to: outsourcing.mail
-    mail(subject: '株式会社Ri-Plusに求人応募頂きありがとうございます。') do |format|
+    mail(subject: 'Okuriteに求人応募頂きありがとうございます。') do |format|
       format.text
     end
   end

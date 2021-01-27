@@ -3,7 +3,7 @@ class ContactMailer < ActionMailer::Base
   def received_email(contact)
     @contact = contact
     mail to: "info@ri-plus.jp"
-    mail(subject: '株式会社Ri-Plusよりお問い合わせがありました') do |format|
+    mail(subject: 'Okuriteよりお問い合わせがありました') do |format|
       format.text
     end
   end
@@ -11,7 +11,7 @@ class ContactMailer < ActionMailer::Base
   def send_email(contact)
     @contact = contact
     mail to: contact.email
-    mail(subject: 'アポ匠にお問い合わせ頂きありがとうございます｜株式会社Ri-Plus') do |format|
+    mail(subject: 'Okuriteにお問い合わせ頂きありがとうございます｜株式会社Ri-Plus') do |format|
       format.text
     end
   end
