@@ -30,7 +30,11 @@ z-index:10;
     max-width:280px;
     margin-top:10px;
     height: 100%;
+    @media screen and ( max-width:479px ){
+      width:150px;
+    }
   }
+  
   .navi {
     background-color:$main_color;
     line-height:middle;
@@ -186,6 +190,9 @@ footer {
           font-weight:bold;
           margin-top:30px;
           padding-bottom:20px;
+          @media screen and ( max-width:479px )
+          {font-size:10px;
+          padding-bottom:8px;}
       }
       .face-2 {
           font-size:6.0vw;
@@ -199,14 +206,21 @@ footer {
           padding-bottom:15px;
           color:red;
       }
+      .face-image {
+        margin-top:20px;
+      }
       .face-price {
           font-size:6.0vw;
           font-weight:bold;
           color:red;
-
+          @media screen and ( max-width:479px ){
+            font-size:2rem;
+            margin:0px 0px -10px;
+          }
            strong{
              font-size:8.5vw;
              color:red;
+
            }
       }
       .face-conversion {
@@ -405,6 +419,7 @@ table.company {
         h2 {
             font-size:3vw;
             font-weight:bold;
+            @media screen and ( max-width:479px ){font-size:2rem;}
             }
         p {
             font-size:2vw;
@@ -412,13 +427,17 @@ table.company {
         strong {
             color: $main_color;
             font-size:4.0rem;
+            @media screen and ( max-width:479px ){font-size:2.5rem;}
             text-decoration: underline;
             font-weight:bold;
         }
         h6 {
             line-height:2.0em;
             font-size:1.5vw;
-            margin:0 70px;
+            margin:0 50px;
+            @media screen and ( max-width:479px ){
+              font-size:1rem;
+              margin:0 10px;}
         }
 }
 
