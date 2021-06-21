@@ -103,7 +103,7 @@
           | リストの準備（Okuriteリスト推奨）
         td = f.select(:list, [ \
             ["選択する","選択する"],      \
-            ["Okuriteリスト使用（1リスト60円）","Okuriteリスト使用（1リスト60円）"],      \
+            ["Okuriteリスト使用（1リスト30円）","Okuriteリスト使用（1リスト30円）"],      \
             ["自社で用意する","自社で用意する"]      \
             ])
       tr
@@ -120,7 +120,7 @@
         td
           strong.label 必須
         td.arrow_box
-          | 本契約に進む際の月間希望件数
+          | 本契約に進む際の月間希望件数（500件〜）
         td
           = f.number_field :contract
           | 件
