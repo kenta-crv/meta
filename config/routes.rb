@@ -18,4 +18,8 @@ Rails.application.routes.draw do
   get '/contact' => 'contact#index'
   post '/confirm' => 'contact#confirm'
   post '/thanks' => 'contact#thanks'
+
+  get 'trial' => 'trial#index'
+  post 'trial/confirm' => 'trial#confirm'
+  post 'trial/thanks' => 'trial#thanks'
 end
