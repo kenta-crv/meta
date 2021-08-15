@@ -34,7 +34,7 @@ z-index:10;
       width:150px;
     }
   }
-  
+
   .navi {
     background-color:$main_color;
     line-height:middle;
@@ -332,7 +332,7 @@ table.company {
    margin: 0 auto;
    border-collapse: separate;
    border-spacing: 0px 15px;
-   font-size: 1.5vw;
+   font-size: 1.0vw;
 
    th, td { padding: 10px; }
 
@@ -344,7 +344,7 @@ table.company {
       position: relative;
       color: #fff;
       font-weight: normal;
-      font-size: 1.7vw;
+      font-size: 1.3vw;
 
       :after {
          left: 100%;

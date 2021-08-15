@@ -1,0 +1,17 @@
+br
+br
+.tops-wrapper
+    h2.headline
+      | アカウント情報
+    table.company
+      colgroup
+        col[width="40%"]
+        col[width="60%"]
+        |  　
+      tr
+        th
+          | ログインアドレス
+        td
+          = @admin.email
+    br
+    = link_to "アカウント情報編集", edit_admin_registration_path, class:"btn btn-success"

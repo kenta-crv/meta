@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, controllers: {
+    registrations: 'admins/registrations',
+    sessions: 'admins/sessions'
+  }
+  resources :admins, only: [:show]
 
   root to: 'top#index' #トップランディングページ
   get 'business' => 'top#business' #事業内容
@@ -10,9 +14,9 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  get '/estimates' => 'estimates#index'
-  post 'estimates/confirm' => 'estimates#confirm'
-  post 'estimates/thanks' => 'estimates#thanks'
+  resources :customers do
+    resources :calls
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/contact' => 'contact#index'

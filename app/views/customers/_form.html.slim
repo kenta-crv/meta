@@ -1,0 +1,105 @@
+- set_meta_tags noindex: true
+= form_for @customer do |f|
+  table.company[width="90%"]
+    col[width="20%"]
+    col[width="30%"]
+    col[width="20%"]
+    col[width="30%"]
+    tbody
+      tr
+        th
+          | 会社名
+        td
+          =text_field :customer, :company
+        th
+          | メールアドレス
+        td
+          =text_field :customer, :mail
+      tr
+        th
+          | 担当者
+        td
+          =text_field :customer, :name
+        th
+          | 業種
+        td
+          =text_field :customer, :industry
+      tr
+        th
+          | 電話番号
+        td
+          =telephone_field :customer, :tel
+        th
+          | 携帯番号
+        td
+          =telephone_field :customer, :mobile
+      tr
+        th
+          | 郵便番号
+        td
+          | 〒
+          =number_field :customer, :postnumber
+        th
+          | 住所
+        td
+          =text_area :customer, :address
+      tr
+        th
+          | URL
+        td
+          =text_field :customer, :url
+        th
+          | 過去アポ利用履歴
+        td
+          = f.radio_button :history, "Yes"
+          | ある
+          = f.radio_button :history, "No"
+          | ない
+          = f.radio_button :history, "what"
+          | 不明
+      tr
+        th
+          | 取引商品
+        td
+          =text_field :customer, :item
+        th
+          | 希望オプション
+        td
+          =text_field :customer, :option
+      tr
+        th
+          | ターゲットエリア
+        td
+          =text_field :customer, :area
+        th
+          | ターゲット業種
+        td
+          =text_field :customer, :target
+      tr
+        th
+          | 料金
+        td
+          =number_field :customer, :price
+          | 円
+        th
+          | 件数
+        td
+          =number_field :customer, :number
+          | 件
+      tr
+        th
+          | 希望開始時期
+        td
+          =date_field :customer, :start
+        th
+          | 次回営業日
+        td
+          =date_field :customer, :next
+      tr
+        th
+          | 備考
+        td[colspan="4"]
+          = text_area :customer, :content
+      tr
+        td[colspan="4"]
+          = f.submit '登録する',class:"btn btn-danger"

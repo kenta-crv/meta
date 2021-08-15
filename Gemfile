@@ -86,3 +86,7 @@ gem 'devise'
 gem 'sitemap_generator'
 
 gem 'wysiwyg-rails'
+
+gem 'ransack'
+
+gem 'kaminari-bootstrap', '~> 3.0.1'
