@@ -17,19 +17,15 @@ class Call < ApplicationRecord
   }
 
   @@StatuItems = [
+  "日程調整中",
   "着信留守",
   "担当者不在",
-  "フロントNG",
-  "見込",
-  "資料送付APP",
-  "APP",
-  "APPキャンセル",
-  "NG",
-  "クロージングNG",
-  "永久NG",
+  "見込高",
+  "見込中",
+  "見込低",
   "契約",
-  "再掲載",
-  "RiPlusAPP"
+  "NG",
+  "回答待ち",
 ]
 def self.StatuItems
   @@StatuItems

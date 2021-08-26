@@ -11,6 +11,7 @@
     | 件中
     | )
 
+
 = form_tag @customer do
  .scroll
   table.company[width="90%" cellpadding="0" cellspacing="0"]
@@ -22,7 +23,7 @@
         th
           | 会社名
         th
-          | 電話番号
+          | 担当者名
         th
           | 住所
         th
@@ -42,7 +43,7 @@
         td
           = customer.tel
         td
-          = customer.address
+          = customer.name
         td
           = customer.last_call.try(:statu)
         td

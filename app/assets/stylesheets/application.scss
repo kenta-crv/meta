@@ -332,7 +332,7 @@ table.company {
    margin: 0 auto;
    border-collapse: separate;
    border-spacing: 0px 15px;
-   font-size: 1.0vw;
+   font-size: 1.2vw;
 
    th, td { padding: 10px; }
 
@@ -345,6 +345,10 @@ table.company {
       color: #fff;
       font-weight: normal;
       font-size: 1.3vw;
+      a {
+        color:#fff;
+        text-decoration:underline;
+      }
 
       :after {
          left: 100%;
@@ -369,6 +373,9 @@ table.company {
 
   .harf {
     width:45%;
+  }
+  texaarea {
+    height:20px;
   }
 }
 
