@@ -9,7 +9,7 @@ Rails.application.configure do
   domain: 'okurite.jp',
   port: 587,
   user_name: 'info@okurite.jp',
-  password: 'orRLs&0o',
+  password: 'F9jPVW#cu',
   authentication: 'plain',
   enable_starttls_auto: true
   }
