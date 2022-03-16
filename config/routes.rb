@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :admins, controllers: {
-    registrations: 'admins/registrations',
-    sessions: 'admins/sessions'
-  }
-  resources :admins, only: [:show]
-
   root to: 'top#index' #トップランディングページ
+  get 'lp' => 'top#lp' #ライディングページ
   get 'business' => 'top#business' #事業内容
   get 'company' => 'top#company'  #会社概要
   get 'privacy' => 'top#privacy' #プライバシーポリシー
