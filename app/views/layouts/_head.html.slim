@@ -11,7 +11,7 @@ script[src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"]
 
 = display_meta_tags(default_meta_tags)
 = favicon_link_tag('favicon.ico')
-/javascript:
-/  | fbq('track', 'ViewContent');
-/script[type="application/ld+json"]
-/  |  { "@context" : "http://schema.org", "@type" : "LocalBusiness", "name" : "株式会社Ri-Plus", "image" : "https://ri-plus.jp/assets/logo1-c8fe110a24b7fbec6cbb000feac0db64814ab62e0164086408358b5c3291d0ef.png", "telephone" : "03-6712-7024", "email" : "info@ri-plus.jp", "address" : { "@type" : "PostalAddress", "addressRegion" : "東京都渋谷区鴬谷町19-19", "postalCode" : "〒150-0032" }, "url" : "http://ri-plus.jp/" }
+script[async src="https://www.googletagmanager.com/gtag/js?id=UA-232469503-1"]
+
+script
+  |  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-232469503-1'); 

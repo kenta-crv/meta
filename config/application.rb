@@ -19,10 +19,10 @@ module Bookkeeping
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
     address: 'smtp3.gmoserver.jp',
-    domain: 'okurite.jp',
+    domain: 'factoru.jp',
     port: 587,
-    user_name: 'info@okurite.jp',
-    password: 'F9jPVW#cu',
+    user_name: 'lstep@factoru.jp',
+    password: '1VH&0GuR',
     authentication: 'plain',
     enable_starttls_auto: true
     }

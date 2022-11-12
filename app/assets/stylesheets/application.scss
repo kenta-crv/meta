@@ -16,9 +16,9 @@
  */
 
 
- $main_color: #E60000;
- $sub_color: #B30000;
- $asort_color: #B30000;
+ $main_color: #00B900;
+ $sub_color: #00B900;
+ $asort_color: #00B900;
  /*ヘッダーのベース設定*/
 header {
 width:100%;
@@ -186,17 +186,17 @@ footer {
 
 .back-image {
     .box2 {
-     padding: 1vw 4.5vw 0.3vw;
+     padding: 1vw 1.5vw 0.3vw;
      display:inline-block;
-     background:red;
+     background:#F34E0A;
            p {
            color: #FFF;/*文字色*/
            font-weight: bold;
-           font-size:2.0vw;
+           font-size:1.9vw;
              }
       }
       .face-1 {
-          font-size:2.0vw;
+          font-size:2.2vw;
           line-height:3.6vw;
           font-weight:bold;
           margin-top:30px;
@@ -221,9 +221,10 @@ footer {
         margin-top:20px;
       }
       .face-price {
-          font-size:6.0vw;
+          font-size:3.8vw;
+          text-align:center;
           font-weight:bold;
-          color:red;
+          color:white;
           @media screen and ( max-width:479px ){
             font-size:2rem;
             margin:0px 0px -10px;
@@ -1041,7 +1042,7 @@ dd {
   margin: 0 auto;
   border-collapse: separate;
   border-spacing: 1px 0;
-  font-size: 15px;
+  font-size: 13px;
   }
   table.price th,
   table.price td {
@@ -1058,7 +1059,7 @@ dd {
   position: relative;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  font-size: 21px;
+  font-size: 16px;
   }
   table.price th.c2 {
   background: rgb(237,73,147); /* Old browsers */
@@ -1070,7 +1071,16 @@ dd {
   background: linear-gradient(to bottom, rgba(204,20,69,1) 1%,rgba(182,17,61,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc1445', endColorstr='#b6113d',GradientType=0 ); /* IE6-9 */
   }
-
+  table.price th.c1 {
+  background: rgb(162,206,26); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(97,174,36,1) 1%, rgba(86,155,32,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(97,174,36,1)), color-stop(100%,rgba(86,155,32,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(97,174,36,1) 1%,rgba(186,155,32,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(97,174,36,1) 1%,rgba(86,155,32,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(97,174,36,1) 1%,rgba(86,155,32,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(97,174,36,1) 1%,rgba(86,155,32,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61ae24', endColorstr='#569b20',GradientType=0 ); /* IE6-9 */
+  }
   table.price th.c3 {
   background: rgb(29,140,233); /* Old browsers */
   background: -moz-linear-gradient(top, rgba(17,63,140,1) 1%, rgba(15,56,125,1) 100%); /* FF3.6+ */
