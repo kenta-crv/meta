@@ -21,8 +21,8 @@ module Bookkeeping
     address: 'smtp3.gmoserver.jp',
     domain: 'factoru.jp',
     port: 587,
-    user_name: 'lstep@factoru.jp',
-    password: '1VH&0GuR',
+    user_name: 'futurejobs@factoru.jp',
+    password: 'aQh$2qdZ',
     authentication: 'plain',
     enable_starttls_auto: true
     }

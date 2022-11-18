@@ -16,15 +16,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 会社名
-        td
-          = f.hidden_field :company
-          = @contact.company
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 担当者名
+          | お名前（おなまえ）
         td
           = f.hidden_field :name
           = @contact.name
@@ -32,7 +24,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 電話番号
+          | 電話番号（でんわばんごう）
         td
           = f.hidden_field :tel
           = @contact.tel
@@ -40,7 +32,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | メールアドレス
+          |メールアドレス（めーるあどれす）
         td
           = f.hidden_field :email
           = @contact.email
@@ -48,7 +40,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 住所
+          | 住所（じゅうしょ）
         td
           = f.hidden_field :address
           = @contact.address
@@ -56,15 +48,39 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 件名
+          | ビザの種類（びざのしゅるい）
         td
-          = f.hidden_field :subject
-          = @contact.subject
+          = f.hidden_field :visa
+          = @contact.visa
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 本文
+          | 今のお仕事（いまのおしごと）
+        td
+          = f.hidden_field :work
+          = @contact.work
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | いつまでに転職したいか（いつまでにてんしょくしたいか）
+        td
+          = f.hidden_field :period
+          = @contact.period
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | あなたの国（くに）はどこですか？
+        td
+          = f.hidden_field :country
+          = @contact.country
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 問い合わせ内容（といあわせないよう）
         td
           = f.hidden_field :message
           = @contact.message

@@ -1,9 +1,9 @@
 module ApplicationHelper
   def default_meta_tags
     {
-      site: "Lステップの構築代行・運用代行なら｜Lステップコンサルティング",
+      site: "特定技能外国人の求人紹介なら｜Future Jobs",
       title:"<%= yield(:title) | 合同会社ファクトル' %>",
-      description: "Lステップの構築代行・運用代行ならBtoBで数々のCRM・MAツールの運用サポート・システム構築を行って来たLステップコンサルティングにお任せ下さい。",
+      description: "特定技能・就労ビザ・永住ビザの外国人の求人紹介ならFuture Jobsにお任せください。豊富な案件で御社をサポートします。",
       canonical: request.original_url,  # 優先されるurl
       charset: "UTF-8",
       reverse: true,

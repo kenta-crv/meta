@@ -16,13 +16,13 @@
  */
 
 
- $main_color: #00B900;
- $sub_color: #00B900;
- $asort_color: #00B900;
+ $main_color: #FF6631;
+ $sub_color: #FF6631;
+ $asort_color: #FF6631;
  /*ヘッダーのベース設定*/
 header {
 width:100%;
-background-color:white;
+background-color:$main_color;
 position: sticky;
 top: 0;
 z-index:10;
@@ -901,7 +901,7 @@ dd {
 
 
 .white{
-  color:white;
+  color:$main_color;
   font-size:10px;
 }
 
@@ -945,7 +945,7 @@ dd {
 	font-size: 1.5em;
 	margin-left: -2em;
 	padding-right: 0.5em;
-	content: 'Q';
+	content: '●';
 }
 .cp_qa .cp_actab label:hover {
 	transition: all 0.3s;

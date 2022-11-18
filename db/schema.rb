@@ -35,11 +35,14 @@ ActiveRecord::Schema.define(version: 2021_08_14_125151) do
   end
 
   create_table "contacts", force: :cascade do |t|
-    t.string "company"
     t.string "name"
     t.string "tel"
     t.string "email"
     t.string "address"
+    t.string "visa"
+    t.string "work"
+    t.string "country"
+    t.string "period"
     t.string "subject"
     t.string "message"
     t.datetime "created_at", null: false
@@ -72,84 +75,7 @@ ActiveRecord::Schema.define(version: 2021_08_14_125151) do
     t.index ["admin_id"], name: "index_customers_on_admin_id"
   end
 
-  create_table "estimates", force: :cascade do |t|
-    t.string "company"
-    t.string "name"
-    t.string "tel"
-    t.string "mail"
-    t.string "address"
-    t.string "url"
-    t.string "business"
-    t.string "number"
-    t.string "start"
-    t.string "target_industry"
-    t.string "target_employment"
-    t.string "document_1"
-    t.string "document_2"
-    t.string "document_3"
-    t.string "remarks"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "outsourcings", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "tel"
-    t.string "mail"
-    t.string "postnumber"
-    t.string "address"
-    t.string "age"
-    t.string "remarks"
-    t.string "other_1"
-    t.string "other_2"
-    t.date "other_3"
-    t.string "other_4"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.string "file"
-    t.string "choice"
-    t.string "keyword"
-    t.string "description"
-    t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "recruits", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "tel"
-    t.string "mail"
-    t.string "postnumber"
-    t.string "address"
-    t.string "select_1"
-    t.string "select_2"
-    t.string "select_3"
-    t.string "remarks"
-    t.string "other_1"
-    t.string "other_2"
-    t.string "other_3"
-    t.string "other_4"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "releases", force: :cascade do |t|
-    t.string "title"
-    t.string "file"
-    t.string "keyword"
-    t.string "description"
-    t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "topics", force: :cascade do |t|
     t.string "title"
     t.string "file"
     t.string "choice"
@@ -172,27 +98,6 @@ ActiveRecord::Schema.define(version: 2021_08_14_125151) do
     t.string "contract"
     t.string "remarks"
     t.string "agree"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "workers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "tel"
-    t.string "mail"
-    t.string "postnumber"
-    t.string "address"
-    t.string "week"
-    t.string "experience"
-    t.string "bank"
-    t.string "store"
-    t.string "account_number"
-    t.string "transfer_name"
-    t.string "other_1"
-    t.string "other_2"
-    t.string "other_3"
-    t.string "other_4"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
