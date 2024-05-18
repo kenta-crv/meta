@@ -9,8 +9,8 @@
 
   .tops-wrapper
     h1.headline-first
-      span> お問い合わせ
-      | フォーム
+      span> 無料面接
+      | 申請フォーム
     br
     table.company
       colgroup
@@ -21,70 +21,70 @@
         td
           strong.label 必須
         td.arrow_box
-          | お名前（おなまえ）
+          | 会社名
+        td = f.text_field :company
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | お名前
         td = f.text_field :name
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 電話番号（でんわばんごう）
+          | 電話番号
         td = f.text_field :tel
       tr
         td
           strong.label 必須
         td.arrow_box
-          | メールアドレス（めーるあどれす）
+          | メールアドレス
         td = f.email_field :email
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 住所（じゅうしょ）
+          | 住所
         td = f.text_field :address
       tr
         td
           strong.label 必須
         td.arrow_box
-          | ビザの種類（びざのしゅるい）
-        td = f.select(:visa, [ \
-            ["せんたくする","せんたくする"],      \
-            ["特定技能1号（とくていぎのういちごう）","特定技能1号（とくていぎのういちごう）"],      \
-            ["高度外国人材 技術（こうどがいこくじんざい ぎじゅつ）","高度外国人材 技術（こうどがいこくじんざい ぎじゅつ）"],      \
-            ["高度外国人材 人文知識（こうどがいこくじんざい じんぶんちしき）","高度外国人材 人文知識（こうどがいこくじんざい じんぶんちしき）"],      \
-            ["高度外国人材 国際業務（こうどがいこくじんざい こくさいぎょうむ）","高度外国人材 国際業務（こうどがいこくじんざい こくさいぎょうむ）"],      \
-            ["永住ビザ（えいじゅうびざ）","永住ビザ（えいじゅうびざ）"],      \
-            ["留学生（りゅうがくせい）","留学生（りゅうがくせい）"],      \
-            ["その他（そのた）","その他（そのた）"],      \
-            ])
+          | 募集業種
+        td = f.text_field :industry
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 今のお仕事（いまのおしごと）
-        td = f.text_field :work
+          | 募集人数
+        td = f.text_field :number_of_people
       tr
         td
           strong.label 必須
         td.arrow_box
-          | いつまでに転職したいか（いつまでにてんしょくしたいか）
+          | 外国人受け入れ実績について
+        td = f.select(:history, [ \
+            ["有り","有り"],      \
+            ["無し","無し"],      \
+            ], include_blank: "選択してください")
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 何ヶ月以内の採用を希望していますか？
         td = f.select(:period, [ \
-            ["せんたくする","せんたくする"],      \
-            ["すぐにでも","すぐにでも"],      \
-            ["１かげついない","１かげついない"],      \
-            ["３かげついない","かげついない"],      \
-            ["その他（そのた）","その他（そのた）"],      \
-            ])
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | あなたの国（くに）はどこですか？
-        td = f.text_field :country
+            ["なるべく早め","なるべく早め"],      \
+            ["３ヶ月以内","３ヶ月以内"],      \
+            ["６ヶ月以内","６ヶ月以内"],      \
+            ["定期的な紹介を希望","定期的な紹介を希望"],      \
+            ["決まっていない","決まっていない"],      \
+            ],include_blank: "選択してください") 
       tr
         td
           strong.label 任意
         td.arrow_box
-          | 問い合わせ内容（といあわせないよう）
+          | その他のご希望内容
         td
           = f.text_area :message
       tr

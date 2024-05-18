@@ -4,44 +4,12 @@ html
       = render template: 'layouts/_head.html.slim'
   header
       .row
-        .col-xs-4
+        .col-xs-2
            = link_to "/"
-            =image_tag "rogo.webp", width: "80%", class:"header-image"
-        h1.col-xs-3.white
-         特定技能外国人の専門求人サイト
-        .col-xs-4.visible-md
-        .col-xs-1
-                /.navToggle
-                  span
-                  span
-                  span
-                  span menu
-      /.row.navi
-        .col-xs-12.center.hidden-xs
-          /ul#dropmenu
-           li
-             = link_to  'トップ', '/' , class: "col-md"
-           li
-             = link_to  'Okurite Neo', '/' , :class=>"col-md"
-           li
-             = link_to  '会社概要', '/company' , :class=>"col-md"
-           li
-            = link_to  '問い合わせ', '/contact' , :class=>"col-md"
-
-
-        /nav.globalMenuSp
-           ul
-            li
-              = link_to  'トップ', '/' , class: "col-md"
-            li
-              = link_to  '記事一覧', '/posts' , :class=>"col-md"
-            li
-              = link_to  'よくある質問', '/question' , :class=>"col-md"
-            li
-              = link_to  '会社概要', '/company' , :class=>"col-md"
-            li
-             = link_to  '問い合わせ', '/contact' , :class=>"col-md"
-
+            =image_tag "rogo.webp", width: "170px", class:"header-image", alt:"株式会社Ri-Plus『アポ匠ロゴ』"
+        .col-xs-8
+      .row.navi
+       .col-xs-12.center
   body
     p.notice
       = notice

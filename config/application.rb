@@ -22,7 +22,7 @@ module Bookkeeping
     domain: 'factoru.jp',
     port: 587,
     user_name: 'futurejobs@factoru.jp',
-    password: 'aQh$2qdZ',
+    password: ENV['EMAIL_PASSWORD'],
     authentication: 'plain',
     enable_starttls_auto: true
     }

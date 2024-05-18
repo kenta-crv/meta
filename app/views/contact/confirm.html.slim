@@ -16,7 +16,15 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | お名前（おなまえ）
+          | 会社名
+        td
+          = f.hidden_field :compnay
+          = @contact.company
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | お名前
         td
           = f.hidden_field :name
           = @contact.name
@@ -24,7 +32,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 電話番号（でんわばんごう）
+          | 電話番号
         td
           = f.hidden_field :tel
           = @contact.tel
@@ -32,7 +40,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          |メールアドレス（めーるあどれす）
+          |メールアドレス
         td
           = f.hidden_field :email
           = @contact.email
@@ -40,7 +48,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 住所（じゅうしょ）
+          | 住所
         td
           = f.hidden_field :address
           = @contact.address
@@ -48,23 +56,31 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | ビザの種類（びざのしゅるい）
+          | 募集業種
         td
-          = f.hidden_field :visa
-          = @contact.visa
+          = f.hidden_field :industry
+          = @contact.industry
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 今のお仕事（いまのおしごと）
+          | 募集人数
         td
-          = f.hidden_field :work
-          = @contact.work
+          = f.hidden_field :number_of_people
+          = @contact.number_of_people
       tr
         td
           strong.label 必須
         td.arrow_box
-          | いつまでに転職したいか（いつまでにてんしょくしたいか）
+          | 外国人受け入れ実績について
+        td
+          = f.hidden_field :history
+          = @contact.history
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 何ヶ月以内の採用を希望していますか？
         td
           = f.hidden_field :period
           = @contact.period
@@ -72,15 +88,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | あなたの国（くに）はどこですか？
-        td
-          = f.hidden_field :country
-          = @contact.country
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 問い合わせ内容（といあわせないよう）
+          | その他のご希望内容
         td
           = f.hidden_field :message
           = @contact.message

@@ -35,15 +35,15 @@ ActiveRecord::Schema.define(version: 2021_08_14_125151) do
   end
 
   create_table "contacts", force: :cascade do |t|
+    t.string "company"
     t.string "name"
     t.string "tel"
     t.string "email"
     t.string "address"
-    t.string "visa"
-    t.string "work"
-    t.string "country"
+    t.string "industry"
+    t.string "number_of_people"
+    t.string "history"
     t.string "period"
-    t.string "subject"
     t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
