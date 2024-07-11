@@ -8,98 +8,45 @@
     tbody
       tr
         th
-          | 会社名
+          | ad_name
         td
-          =text_field :customer, :company
+          =text_field :customer, :ad_name
         th
-          | メールアドレス
+          | adset_name
         td
-          =text_field :customer, :mail
+          =text_field :customer, :adset_name
       tr
         th
-          | 担当者
+          | campaign_name
         td
-          =text_field :customer, :name
+          =text_field :customer, :campaign_name
         th
-          | 業種
+          | form_name
         td
-          =text_field :customer, :industry
+          =text_field :customer, :form_name
       tr
         th
-          | 電話番号
+          | platform
         td
-          =telephone_field :customer, :tel
+          =text_field :customer, :platform
         th
-          | 携帯番号
+          | company_name
         td
-          =telephone_field :customer, :mobile
+          =text_field :customer, :company_name
       tr
         th
-          | 郵便番号
+          | full_name
         td
-          | 〒
-          =number_field :customer, :postnumber
+          =text_field :customer,:full_name
         th
-          | 住所
+          | phone_number
         td
-          =text_area :customer, :address
+          =text_area :customer, :phone_number
       tr
         th
-          | URL
+          | email
         td
-          =text_field :customer, :url
-        th
-          | 過去アポ利用履歴
-        td
-          = f.radio_button :history, "Yes"
-          | ある
-          = f.radio_button :history, "No"
-          | ない
-          = f.radio_button :history, "what"
-          | 不明
-      tr
-        th
-          | 取引商品
-        td
-          =text_field :customer, :item
-        th
-          | 希望オプション
-        td
-          =text_field :customer, :option
-      tr
-        th
-          | ターゲットエリア
-        td
-          =text_field :customer, :area
-        th
-          | ターゲット業種
-        td
-          =text_field :customer, :target
-      tr
-        th
-          | 料金
-        td
-          =number_field :customer, :price
-          | 円
-        th
-          | 件数
-        td
-          =number_field :customer, :number
-          | 件
-      tr
-        th
-          | 希望開始時期
-        td
-          =date_field :customer, :start
-        th
-          | 次回営業日
-        td
-          =date_field :customer, :next
-      tr
-        th
-          | 備考
-        td[colspan="4"]
-          = text_area :customer, :content
+          =text_field :customer, :email
       tr
         td[colspan="4"]
           = f.submit '登録する',class:"btn btn-danger"

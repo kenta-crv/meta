@@ -2,12 +2,16 @@ class CreateCustomers < ActiveRecord::Migration[5.2]
   def change
     create_table :customers do |t|
       t.references :admin, foreign_key: true
-      t.string :company #会社名
-      t.string :name #代表者苗字
-      t.string :tel #電話番号
-      t.string :mobile #携帯番号
-      t.string :mail #メールアドレス
-      t.string :postnumber #郵便番号
+      t.string :ad_name
+      t.string :adset_name
+      t.string :campaign_name
+      t.string :form_name
+      t.string :platform
+      t.string :company_name
+      t.string :full_name
+      t.string :phone_number
+      t.string :email
+
       t.string :address #住所
       t.string :industry #業種
       t.string :url #ビル名・号室

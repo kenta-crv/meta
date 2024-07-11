@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_14_125151) do
+ActiveRecord::Schema.define(version: 2021_08_14_064646) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -24,39 +24,17 @@ ActiveRecord::Schema.define(version: 2021_08_14_125151) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
-  create_table "calls", force: :cascade do |t|
-    t.integer "customer_id"
-    t.string "statu"
-    t.datetime "time"
-    t.string "comment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["customer_id"], name: "index_calls_on_customer_id"
-  end
-
-  create_table "contacts", force: :cascade do |t|
-    t.string "company"
-    t.string "name"
-    t.string "tel"
-    t.string "email"
-    t.string "address"
-    t.string "industry"
-    t.string "number_of_people"
-    t.string "history"
-    t.string "period"
-    t.string "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "customers", force: :cascade do |t|
     t.integer "admin_id"
-    t.string "company"
-    t.string "name"
-    t.string "tel"
-    t.string "mobile"
-    t.string "mail"
-    t.string "postnumber"
+    t.string "ad_name"
+    t.string "adset_name"
+    t.string "campaign_name"
+    t.string "form_name"
+    t.string "platform"
+    t.string "company_name"
+    t.string "full_name"
+    t.string "phone_number"
+    t.string "email"
     t.string "address"
     t.string "industry"
     t.string "url"
@@ -73,33 +51,6 @@ ActiveRecord::Schema.define(version: 2021_08_14_125151) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["admin_id"], name: "index_customers_on_admin_id"
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.string "file"
-    t.string "choice"
-    t.string "keyword"
-    t.string "description"
-    t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "trials", force: :cascade do |t|
-    t.string "company"
-    t.string "name"
-    t.string "tel"
-    t.string "email"
-    t.string "address"
-    t.string "try"
-    t.string "list"
-    t.string "script"
-    t.string "contract"
-    t.string "remarks"
-    t.string "agree"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end
