@@ -91,3 +91,7 @@ gem 'ransack'
 
 gem 'kaminari-bootstrap', '~> 3.0.1'
 gem 'dotenv-rails', groups: [:development, :test]
+
+# Gemfileに以下を追加
+gem 'faraday'
+gem 'omniauth-facebook'
