@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'customer#index' #トップランディングページ
+  root to: 'top#index' #トップランディングページ
   resources :customers
   post 'leads/webhook', to: 'leads#webhook'
 end
